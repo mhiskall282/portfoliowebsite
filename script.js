@@ -17,3 +17,21 @@ document.getElementById('messageForm').addEventListener('submit', function(event
     alert('Message sent successfully!');
     // Alternatively, you can redirect the user to a thank you page or do any other action.
 });
+
+
+
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function handleRequest(request) {
+  const response = await fetch('https://github.com/mhiskall282/portfoliowebsite/blob/main/index.html', {
+    cf: {
+      cacheTtl: 86400, // Cache for 24 hours
+    },
+  })
+
+  return response
+}
+
