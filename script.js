@@ -6,26 +6,52 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-// Form Submission
-document.addEventListener("DOMContentLoaded", function () {
-  const messageForm = document.getElementById("messageForm");
-  const confirmationMessage = document.getElementById("confirmationMessage");
+const form = document.getElementById("form");
+const result = document.getElementById("result");
 
-  messageForm.addEventListener("submit", function (event) {
-    // Example: You can prevent the default form submission only if it's not the hamburger menu button
-    if (!event.target.querySelector('.hamburger-icon').contains(document.activeElement)) {
-      event.preventDefault();
-
-      // Add your logic to send the message to your server
-      // For simplicity, we'll just log a message to the console
-      console.log("Message submitted!");
-
-      // Display a confirmation message to the user
-      confirmationMessage.innerText = "Message sent successfully. I'll get back to you soon heads up!";
-      confirmationMessage.style.display = "block";
-    }
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
   });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
 });
+
 
 // Service Worker
 addEventListener('fetch', event => {
