@@ -342,23 +342,47 @@
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-form">
-        <h2>Contact Me</h2>
-        <form action="https://api.web3forms.com/submit" method="POST" id="messageForm">
-          <input type="hidden" name="access_key" value="a1c26b16-dc4e-4c29-992b-8ef951c275ff">
-
+        <div>
+          <h2>Contact Me</h2>
+          <form action="https://api.web3forms.com/submit" method="POST" id="messageForm">
+            <input type="hidden" name="access_key" value="a1c26b16-dc4e-4c29-992b-8ef951c275ff">
+        
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+        
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
+        
             <button type="submit">Send Message</button>
-        </form>
-        <input type="hidden" name="access_key" value="a1c26b16-dc4e-4c29-992b-8ef951c275ff">
-    </div>
+          </form>
+        
+          <script>
+            document.getElementById("messageForm").addEventListener("submit", function (event) {
+              event.preventDefault();
+        
+              // Get form data
+              const formData = new FormData(event.target);
+        
+              // Make a POST request to the form submission endpoint
+              fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  // Handle the response data as needed
+                  console.log(data);
+                })
+                .catch((error) => {
+                  // Handle errors
+                  console.error("Error:", error);
+                });
+            });
+          </script>
+        </div>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
