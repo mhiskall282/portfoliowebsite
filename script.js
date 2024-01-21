@@ -9,6 +9,7 @@ function toggleMenu() {
 // Form Submission
 document.addEventListener("DOMContentLoaded", function () {
   const messageForm = document.getElementById("messageForm");
+  const confirmationMessage = document.getElementById("confirmationMessage");
 
   messageForm.addEventListener("submit", function (event) {
     // Example: You can prevent the default form submission only if it's not the hamburger menu button
@@ -18,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add your logic to send the message to your server
       // For simplicity, we'll just log a message to the console
       console.log("Message submitted!");
+
+      // Display a confirmation message to the user
+      confirmationMessage.innerText = "Message sent successfully. I'll get back to you soon heads up!";
+      confirmationMessage.style.display = "block";
     }
   });
 });
