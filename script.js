@@ -8,13 +8,16 @@ function toggleMenu() {
 
 
   // script.js
-document.getElementById('messageForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submission
 
     // You can add your own logic here, like sending the message to your server
 
     // Display a confirmation message (you can replace this with your own logic)
-});
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("messageForm").addEventListener("submit", function (event) {
+        // Your existing form submission code here
+      });
+    });
 
 
 
