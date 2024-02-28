@@ -71,3 +71,31 @@ async function handleRequest(request) {
             var profileSection = document.getElementById('profile');
             profileSection.classList.add('show'); 
         });
+
+
+
+
+
+
+
+
+
+
+
+
+  const profileImages = [
+      "./assets/profile-pic.png", // Default profile image
+      "./assets/profile-pic2.png", // Other profile images
+      "./assets/profile-pic3.png",
+      // Add more image URLs as needed
+    ];
+    let currentImageIndex = 0;
+    const profileImageElement = document.getElementById('profileImage');
+
+    function changeProfileImage() {
+      currentImageIndex = (currentImageIndex + 1) % profileImages.length;
+      profileImageElement.src = profileImages[currentImageIndex];
+    }
+
+    // Change profile image every 3 seconds (adjust interval as needed)
+    setInterval(changeProfileImage, 3000);
