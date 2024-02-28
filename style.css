@@ -506,6 +506,11 @@ button:hover {
 
 
 
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+  fill: black; /* Change the color to black */
+}
 
 
 
