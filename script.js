@@ -67,10 +67,6 @@ async function handleRequest(request) {
 
   return response;
 }
- document.addEventListener('DOMContentLoaded', function() {
-            var profileSection = document.getElementById('profile');
-            profileSection.classList.add('show'); 
-        });
 
 
 
