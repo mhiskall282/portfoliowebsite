@@ -502,30 +502,7 @@ button:hover {
 
 
 
-/* Transition for buttons and links */
-a, .btn {
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-}
 
-a:hover, .btn:hover {
-  transform: translateY(-2px);
-}
-
-/* Experience portion list restructuring */
-.article-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  justify-content: center;
-}
-
-article {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Other CSS styles remain unchanged */
 
 
 
