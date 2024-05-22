@@ -18,6 +18,7 @@
   }
   #hamburger-nav {
     display: flex;
+    margin-right: 30px;
   }
   #experience,
   .experience-details-container {
@@ -57,6 +58,11 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    margin-right: 30px;
   }
   article {
     font-size: 1rem;
@@ -101,5 +107,16 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    margin-right: 30px;
   }
 }
