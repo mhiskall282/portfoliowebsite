@@ -23,9 +23,9 @@ form.addEventListener("submit", function (e) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json"
+      Accept: "application/json",
     },
-    body: json
+    body: json,
   })
     .then(async (response) => {
       let json = await response.json();
@@ -52,31 +52,20 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-
 // Service Worker
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
+addEventListener("fetch", (event) => {
+  event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
-  const response = await fetch('https://github.com/mhiskall282/portfoliowebsite/blob/main/index.html', {
-    cf: {
-      cacheTtl: 86400, // Cache for 24 hours
-    },
-  });
+  const response = await fetch(
+    "https://github.com/mhiskall282/portfoliowebsite/blob/main/index.html",
+    {
+      cf: {
+        cacheTtl: 86400, // Cache for 24 hours
+      },
+    }
+  );
 
   return response;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
