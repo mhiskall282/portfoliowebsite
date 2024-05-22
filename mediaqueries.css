@@ -10,12 +10,22 @@
   #projects {
     height: fit-content;
   }
+  .section__pic-container img {
+    object-fit: contain;
+    border-radius: 10px 10px 10px 10px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
+
+  .section__pic-container img {
+    object-fit: contain;
+    border-radius: 10px 10px 10px 10px;
+  }
+
   #hamburger-nav {
     display: flex;
     margin-right: 30px;
@@ -93,8 +103,23 @@
     font-size: 1.25rem;
   }
   .logo {
+    font-weight: 700;
+    transition: all 0.3s;
     font-size: 1.5rem;
+    animation: logo 5s forwards 0.2s infinite ease-in-out;
   }
+
+  @keyframes logo {
+    from {
+      color: rgb(157, 68, 240);
+      transform: translateX(1px);
+    }
+    to {
+      transform: translateX(10px);
+      color: chocolate;
+    }
+  }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
