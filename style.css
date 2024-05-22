@@ -43,7 +43,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-   margin-left: auto;
+  margin-left: auto;
   padding-right: 2rem;
 }
 
@@ -64,8 +64,8 @@ a:hover {
   font-size: 2rem;
   text-decoration: none;
   transition: color 0.3s ease;
-   flex: 1;
-  padding-left: 2rem
+  flex: 1;
+  padding-left: 2rem;
 }
 
 .logo:hover {
@@ -291,7 +291,7 @@ section {
 }
 
 .about-pic {
-    border-radius: 2rem;
+  border-radius: 2rem;
 }
 
 .arrow {
@@ -438,79 +438,65 @@ footer p {
   text-align: center;
 }
 
-
-
-
-
-
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Add rounded corners */
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add rounded corners */
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333; /* Dark text color */
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px; /* Add rounded corners */
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text color */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Add rounded corners */
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Add rounded corners */
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
-
-
-
 
 #desktop-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
-
-
-
 
 .instagram-icon {
   width: 24px;
   height: 24px;
-  fill: black; 
-} 
-
-
-
+  fill: black;
+}
