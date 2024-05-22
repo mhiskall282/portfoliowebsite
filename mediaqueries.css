@@ -64,6 +64,7 @@
     display: flex;
     margin-right: 30px;
   }
+
   article {
     font-size: 1rem;
   }
@@ -99,6 +100,10 @@
     height: 46vw;
     justify-content: center;
   }
+  .section__pic-container img {
+    object-fit: contain;
+    border-radius: 50px 0 50px 0;
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -114,5 +119,9 @@
   #hamburger-nav {
     display: flex;
     margin-right: 30px;
+  }
+
+  .about-containers {
+    flex-direction: column;
   }
 }
