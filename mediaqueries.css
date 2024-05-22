@@ -111,10 +111,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    background-color: red;
-  }
-
   #hamburger-nav {
     display: flex;
     margin-right: 30px;
