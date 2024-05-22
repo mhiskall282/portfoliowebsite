@@ -181,6 +181,8 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  object-fit: contain;
+  border-radius: 120px 0 120px 0;
 }
 
 .section__text {
