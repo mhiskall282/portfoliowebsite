@@ -101,6 +101,7 @@ a:hover {
 }
 
 .menu-links {
+  margin-top: 10px;
   position: absolute;
   top: 100%;
   right: 0;
@@ -438,6 +439,7 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  margin-top: 40px;
 }
 
 footer p {
