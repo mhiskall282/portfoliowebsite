@@ -351,10 +351,10 @@ section {
   justify-content: space-around;
 }
 
-#backendz {
+/* #backendz {
   position: relative;
   justify-content: start;
-}
+} */
 
 article {
   display: flex;
