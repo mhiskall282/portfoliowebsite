@@ -28,9 +28,22 @@ a,
 
 /* dark mode */
 
-.dark-mode {
-  background-color: black;
+body.dark-mode {
+  background-color: rgb(16, 11, 11);
   color: white;
+}
+
+body.dark-mode .section__text__p1 {
+  color: rgb(247, 217, 217);
+}
+body.dark-mode .section__text__p2 {
+  color: rgb(247, 217, 217);
+}
+body.dark-mode h3 {
+  color: #5c81e4;
+}
+body.dark-mode .p {
+  color: #e7eaf3;
 }
 
 /* DESKTOP NAV */
