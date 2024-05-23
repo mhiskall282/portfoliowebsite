@@ -72,33 +72,6 @@ async function handleRequest(request) {
 
 //Darkmode
 
-// // const darkMode = document.querySelector(".theme__toggle-wrap");
-// // const body = document.getElementsByTagName("body");
-
-// // darkMode.addEventListener("click", () => {
-// //   body.classList.toggle("dark-mode");
-// // });
-
-// const toggleButton = document.querySelector(".theme__toggle-wrap");
-// const text1 = document.querySelector(".section__text__p1");
-
-// toggleButton.addEventListener("click", () => {
-//   document.body.classList.toggle("dark-mode");
-//   text1.style.color = "orangered";
-
-//   // Save the current mode in localStorage
-//   // if (document.body.classList.contains("dark-mode")) {
-//   //   localStorage.setItem("darkMode", "enabled");
-//   // } else {
-//   //   localStorage.removeItem("darkMode");
-//   // }
-// });
-
-// // Check the saved mode on page load
-// // if (localStorage.getItem("darkMode") === "enabled") {
-// //   document.body.classList.add("dark-mode");
-// // }
-
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.querySelector(".theme__toggle");
 
