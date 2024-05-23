@@ -26,6 +26,13 @@ a,
   transition: all 300ms ease;
 }
 
+/* dark mode */
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /* DESKTOP NAV */
 
 nav,
