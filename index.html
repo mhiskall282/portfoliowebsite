@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/myPic/IMG-20240522-WA0127.jpg" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="darkMode.css">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -26,6 +27,27 @@
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">John Okyere</div>
+
+        
+      <label for="theme" class="theme">
+	      <span class="theme__toggle-wrap">
+		    <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+		    <span class="theme__fill"></span>
+		    <span class="theme__icon">
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+			  <span class="theme__icon-part"></span>
+		    </span>
+	      </span>
+      </label>
+
+
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
