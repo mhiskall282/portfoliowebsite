@@ -100,7 +100,7 @@ async function handleRequest(request) {
 // // }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.querySelector(".theme__toggle-wrap");
+  const toggleButton = document.querySelector(".theme__toggle");
 
   const enableDarkMode = () => {
     document.body.classList.add("dark-mode");
