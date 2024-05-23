@@ -69,3 +69,12 @@ async function handleRequest(request) {
 
   return response;
 }
+
+//Darkmode
+
+const darkMode = document.querySelector(".theme__toggle-wrap");
+const body = document.getElementsByTagName("body");
+
+darkMode.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
