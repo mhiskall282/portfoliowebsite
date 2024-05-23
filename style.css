@@ -45,6 +45,9 @@ body.dark-mode h3 {
 body.dark-mode .p {
   color: #e7eaf3;
 }
+body.dark-mode footer a {
+  color: #e7eaf3;
+}
 
 /* DESKTOP NAV */
 
