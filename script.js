@@ -77,12 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const enableDarkMode = () => {
     document.body.classList.add("dark-mode");
-    localStorage.setItem("darkMode", "enabled");
+    localStorage.setItem("darkMode", "disabled");
   };
 
   const disableDarkMode = () => {
     document.body.classList.remove("dark-mode");
-    localStorage.setItem("darkMode", "disabled");
+    localStorage.setItem("darkMode", "enaabled");
   };
 
   toggleButton.addEventListener("click", () => {
@@ -94,9 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Check the saved mode on page load
-  if (localStorage.getItem("darkMode") === "enabled") {
+  if (localStorage.getItem("darkMode") === "disabled") {
     enableDarkMode();
-  } else if (localStorage.getItem("darkMode") === "disabled") {
+  } else if (localStorage.getItem("darkMode") === "enabled") {
     disableDarkMode();
   } else if (
     window.matchMedia &&
